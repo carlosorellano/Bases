@@ -1,29 +1,32 @@
-<h1>Tarea Angular Actualizado</h1>
-<hr>
+<body>
+  <h1>Tarea Angular Actualizado</h1>
+  <hr>
 
-<h4>{{ name() }}</h4>
+  <h4>{{ name() }}</h4>
 
-<dl>
-  <h6>Nombre:</h6>
-  <dd>{{ name() }}</dd>
+  <dl>
+    <h6>Nombre: </h6> 
+    <dd>{{ name() }}</dd>
 
-  <h6>Edad:</h6>
-  <dd>{{ age() }}</dd>
-<hr>
+    <h6>Edad: </h6>
+    <dd>{{ age() }}</dd>
+    <hr>
 
-  <h6>Método:</h6>
-  <dd>{{ getHeroDescription() }}</dd>
+    <h6>Método:</h6>
+    <dd>{{ getHeroDescription() }}</dd>
 
-  <h6>Capitalizado:</h6>
-  <!-- ! Intentar  -->
-  <dd> {{ name().toUpperCase() }} </dd> 
-</dl>
-<hr>
+    <h6>Capitalizado:</h6>
+    <!-- ! Intentar  -->
+    <dd> {{ name().toUpperCase() }} </dd>
+  </dl>
+  <hr>
 
 
-<button (click)="changeHero()" class="btn btn-primary mx-2">
-  Cambiar nombre
-</button>
+  <button (click)="changeHero()" class="btn btn-primary mx-2">
+    Cambiar nombre
+  </button>
 
-<button (click) = "changeAge()" class="btn btn-primary">Cambiar edad</button>
-<button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
+  <button (click)="changeAge()" class="btn btn-primary">Cambiar edad</button>
+  <button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
+
+</body>
