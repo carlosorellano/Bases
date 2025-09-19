@@ -1,5 +1,5 @@
 <body>
-  <h1>Tarea Angular Actualizado</h1>
+  <h1>Tarea Angular </h1>
   <hr>
 
   <h4>{{ name() }}</h4>
@@ -13,11 +13,12 @@
     <hr>
 
     <h6>Método:</h6>
-    <dd>{{ getHeroDescription() }}</dd>
+    <dd>{{ heroDescription() }}</dd>
 
     <h6>Capitalizado:</h6>
     <!-- ! Intentar  -->
-    <dd> {{ name().toUpperCase() }} </dd>
+    <!-- <dd> {{ capitalizedName() }} </dd> -->
+    <dd> {{ name() | uppercase }} </dd>
   </dl>
   <hr>
 

@@ -1,7 +1,26 @@
-<h1>Counter Componet Page</h1>
-    <h2>Counter: {{ counter }}</h2>
-    <h2>Counter Signal: {{ counterSignal() }}</h2>
+<style>
+    body {
+        text-align: center;
+        /* align-content: center; */
+    }
+
+    h1 {
+        color: rgb(2, 2, 68);
+    }
+
+    dd {
+        font-size: 25px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h1>Inicio</h1><hr>
+    <h2>Counter Componet Page</h2>
+    <h3>Counter: {{ counter }}</h3>
+    <h3>Counter Signal: {{ counterSignal() }}</h3>
     <hr>
-    <button (click)="incrementarValor(1)" > Sumar 1</button>
-    <button (click)="decrementarValor(1)" > Restar 1</button>
-    <button (click)="resetValor()" > Reset</button>
+    <button (click)="incrementarValor(1)"> Sumar 1</button>
+    <button (click)="decrementarValor(1)"> Restar 1</button>
+    <button (click)="resetValor()"> Reset</button>
+</body>

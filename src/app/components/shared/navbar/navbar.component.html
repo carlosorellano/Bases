@@ -1,0 +1,31 @@
+<style>
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(9, 117, 241);
+        color: white;
+        padding: 10px;
+
+    }
+
+    nav a {
+        color: rgb(248, 246, 246);
+        /* text-decoration: none; */
+    }
+
+    nav a.active {
+        color: rgb(21, 255, 0);
+    }
+</style>
+
+
+<nav>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contador </a>
+
+    <a [routerLink]="['/hero']" [routerLinkActive]="'active'">Hero </a>
+
+    <a [routerLink]="['/dragonball']" [routerLinkActive]="'active'">Dragonball </a>
+    <!-- <a href="">Otros </a> -->
+
+    <!-- app-dragonball-page -->
+</nav>
