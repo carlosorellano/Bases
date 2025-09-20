@@ -1,0 +1,46 @@
+<style>
+    body {
+        text-align: center;
+        /* align-content: center; */
+    }
+
+    h1 {
+        color: rgb(2, 2, 68);
+    }
+
+    dd {
+        font-size: 25px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h1>Dragonball Super page </h1>
+    <hr>
+    <section class=" row">
+        <div class="col-12 col-sm-4 m-3">
+
+            <!--crear componente dragonball-character-add
+
+            //Desde aqui -->
+
+            <dragonball-character-add
+            (newCharacter) = "dragonballService.addCharacter($event)"
+
+            />
+
+            <!-- //hasta aqui va a ser el componente a mover  -->
+
+        </div>
+
+        <div class="col-12 col-sm-3">
+
+            <dragonball-character-list [listName]="['Listado de personajes']" [characters]="dragonballService.characters()" />
+
+
+        </div>
+
+
+    </section>
+
+</body>
