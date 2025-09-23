@@ -25,6 +25,8 @@ export class DragonballPageComponent {
     // { id: 3, name: 'Yamcha', power: 7800 },
   ]);
 
+  
+
   // powerClass = computed (() =>{
   //   return {
   //     'text-danger' : true,

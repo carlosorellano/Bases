@@ -14,7 +14,7 @@ export class DragonballService {
 
   saveToLocalSTorage = effect(() =>{
     // console.log(`Character count ${this.characters().length}`)
-    localStorage.setItem('character', JSON.stringify(this.characters()) )
+    localStorage.setItem('characters', JSON.stringify(this.characters()) )
   })
 
   
